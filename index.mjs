@@ -4,7 +4,7 @@ import inquirer from "inquirer";
 const program = new Command();
 
 program
-  .description("My first CLI application")
+  .description("Cowboy-greeter")
   .command("sayHello")
   .action(() => {
     inquirer
