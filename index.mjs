@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import inquirer from "inquirer";
-
+import chalk from "chalk";
 const program = new Command();
 
 program
@@ -17,7 +17,9 @@ program
         },
       ])
       .then((answer) => {
-        console.log(`Howdy ${answer.name}! Welcome to Amarillo, Texas!`);
+        console.log(
+          chalk.green(`Howdy ${answer.name}! Welcome to Amarillo, Texas!`)
+        );
       });
   });
 
